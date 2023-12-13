@@ -11,7 +11,6 @@ const state = reactive({
   count: 0
 });
 const onClick = () => {
-  console.log(123);
   state.count++;
 };
 </script>

@@ -7,7 +7,6 @@ module.exports = {
     'plugin:vue/vue3-essential',
     'plugin:prettier/recommended',
     'eslint:recommended',
-    '@vue/eslint-config-typescript/recommended',
     '@vue/eslint-config-prettier'
   ],
   rules: {
@@ -15,5 +14,10 @@ module.exports = {
     quotes: ['error', 'single'],
     // 禁用console
     'no-console': 'error'
+  },
+  globals: {
+    require: true,
+    module: true,
+    __dirname: true
   }
 };
